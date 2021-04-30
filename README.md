@@ -1,4 +1,4 @@
-# Seans’s dotfiles
+# Sean’s dotfiles
 
 ## Installation
 
