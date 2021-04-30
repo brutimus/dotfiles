@@ -5,12 +5,13 @@
 ### Download
 
 ```bash
-git clone https://github.com/brutimus/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
+git clone https://github.com/brutimus/dotfiles.git ~/.dotfiles
 ```
 ### Installation
 
 ```bash
 cd ~/.dotfiles
+
 # Install Homebrew, Oh My ZSH, etc
 source install.sh
 
