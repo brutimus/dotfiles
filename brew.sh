@@ -46,6 +46,7 @@ brew install woff2
 
 # Install other useful binaries.
 brew install ack
+brew install awscli
 #brew install exiv2
 brew install git
 brew install git-lfs
@@ -68,6 +69,9 @@ brew install --cask google-chrome
 brew install --cask slack
 brew install --cask iterm2
 brew install --cask visual-studio-code
+
+brew tap homebrew/cask-fonts
+brew install --cask font-fira-code
 
 
 
