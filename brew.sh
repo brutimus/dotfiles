@@ -65,9 +65,12 @@ brew install vbindiff
 brew install zopfli
 
 # Install Applications
+brew install --cask dropbox
+brew install --cask google-backup-and-sync
 brew install --cask google-chrome
-brew install --cask slack
 brew install --cask iterm2
+brew install --cask slack
+brew install --cask sourcetree
 brew install --cask visual-studio-code
 
 brew tap homebrew/cask-fonts
