@@ -10,6 +10,13 @@ if which ruby >/dev/null && which gem >/dev/null; then
 fi
 
 
+# Load the shell dotfiles, and then some:
+# * ~/.path can be used to extend `$PATH`.
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.{path,exports,aliases,functions,extra}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
 
 
 # If you come from bash you might have to change your $PATH.
@@ -138,10 +145,16 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# The following path will change on M1 Macs:
 
-# Intel Mac version
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Since the Homebrew prefix changes between Intel and M1, we'll store the value and 
+# configure anything requiring homebrew accordingly.
+unameArch=$(uname -m)
+case "${unameArch##*-}" in
+    x86_64) HOMEBREW_PREFIX=/usr/local;;
+    arm64) HOMEBREW_PREFIX=/opt/homebrew;;
+esac;
 
-# M1 Mac version
-# source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+source "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+
+unset HOMEBREW_PREFIX
