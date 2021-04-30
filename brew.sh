@@ -67,6 +67,7 @@ brew install zopfli
 brew install --cask google-chrome
 brew install --cask slack
 brew install --cask iterm2
+brew install --cask sourcetree
 brew install --cask visual-studio-code
 
 
