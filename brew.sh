@@ -66,6 +66,7 @@ brew install zopfli
 brew install zsh-syntax-highlighting
 
 # Install Applications
+brew install --cask docker
 brew install --cask dropbox
 brew install --cask google-chrome
 brew install --cask google-drive
