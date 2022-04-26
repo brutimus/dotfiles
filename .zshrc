@@ -96,7 +96,7 @@ plugins=(
   aws
   dotenv
   git
-  osx
+  macos
   pyenv
   python
   terraform
