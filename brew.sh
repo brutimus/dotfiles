@@ -81,3 +81,6 @@ brew install --cask font-fira-code
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+# Go ahead and run p10k configuration to install font
+p10k configure
