@@ -63,6 +63,7 @@ brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install zopfli
+brew install zsh-syntax-highlighting
 
 # Install Applications
 brew install --cask dropbox
