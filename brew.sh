@@ -70,6 +70,7 @@ brew install --cask google-chrome
 brew install --cask google-drive
 brew install --cask iterm2
 brew install --cask postman
+brew install --cask rectangle
 brew install --cask slack
 brew install --cask sourcetree
 brew install --cask visual-studio-code
